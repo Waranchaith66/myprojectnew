@@ -166,7 +166,7 @@ error_reporting(0);
                                     <td><?php echo $row->cat_id;?></td>
                                     <td><?php echo $row->pro_price;?></td>
                                     <td><?php echo $row->pro_cost;?></td>
-                                    <td><img src="../uploads/ <?php echo $row->pro_img;?>" width="100px" height="100px"alt=""></td>
+                                    <td><img src="<?php echo $row->pro_img; ?>" alt="" width="100px" height="100px"></td>
                                  <td>
                         <a href="edit-product.php?pro_id=<?php echo $row-> pro_id; ?>" class="btn btn-warning">แก้ไข</a>
                         <a href="delete-product.php?pro_id=<?php echo $row->pro_id;?>&act=delete" class="btn btn-danger" onclick="return confirm('ยืนยันการลบข้อมูลหรอ!!');">ลบ</a>

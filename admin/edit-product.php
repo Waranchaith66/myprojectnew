@@ -166,14 +166,17 @@ error_reporting(0);
                 </div>
                  <!--upload ภาพ -->
                  <div class="form-group">
-                <label for="pro_img">รูปภาพ:</label>
-                <input type="file" class="form-control" id="pro_img" placeholder="นำรูปภาพสินค้ามาใส่" name="pro_img"value="pro_img" <?php echo $pro_img;?>>
-                <p>
-                  <img src="../uploads/<?php echo $pro_img;?>" height="100px" width="100px"  alt="">
+                 <label for="pro_img">อัพโหลดที่อยู่ลิ้งรูปภาพ:</label>
+                <input type="text" id="pro_img" name="pro_img" accept="image/*">
+                 <br>
+                  <br>
+                  <td><img src="<?php echo $row->pro_img; ?>" alt="" width="100px" height="100px"></td> 
                 </p>
+              
              
                 <button type="submit" name="btn_update" id="btn_update" value="update" class="btn btn-dark"  >Update</button>
                </div>
+               
              <?php
                        }
                       }

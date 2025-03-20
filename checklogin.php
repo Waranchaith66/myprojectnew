@@ -31,7 +31,7 @@ try{
         }else{
         echo "<script type='text/javascript'>";
         echo "alert('เข้าสู่ระบบเรียบร้อย');";
-        echo "document.location='welcome.php';";
+        echo "document.location='admin/dashboard.php';";
         echo "</script>";
         }
    }else{
